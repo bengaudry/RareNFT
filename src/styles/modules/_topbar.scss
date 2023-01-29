@@ -65,8 +65,8 @@
 
 @media screen and (max-width: 768px) {
   .top-bar {
-    backdrop-filter: blur(10px) !important;
-    background: rgba(var(--body-bg-color), .85) !important;
+    backdrop-filter: none;
+    background: rgb(var(--body-bg-color));
     .responsive {
       display: flex;
       flex-direction: column;
@@ -98,13 +98,13 @@
     width: 100%;
     height: max-content;
     padding-bottom: 20px;
-    border-bottom: 1px solid rgba(var(--accent-color));
+    border-bottom: 1px solid rgba(var(--accent-color), .4);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 7px;
-    backdrop-filter: blur(10px) !important;
-    background: rgba(var(--body-bg-color), .85) !important;
+    backdrop-filter: none;
+    background: rgb(var(--body-bg-color));
     transition: height, padding, 300ms;
   }
 
