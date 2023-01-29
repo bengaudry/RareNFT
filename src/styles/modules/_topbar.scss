@@ -1,0 +1,55 @@
+.top-bar {
+  position: fixed;
+  width: 100%;
+  padding: 25px 0;
+  z-index: 5;
+  transition: background, backdrop-filter, 200ms;
+  background: transparent;
+
+  .responsive {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.scrolling-top-bar {
+  backdrop-filter: blur(10px);
+  background: rgba(var(--body-bg-color), .85);
+}
+
+.tb-brand {
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: rgb(var(--accent-color));
+}
+
+.tb-nav-items {
+  width: max-content;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.tb-cta {
+  text-align: right;
+}
+
+.tb-nav-link {
+  opacity: 1;
+  display: block;
+  padding: 0 10px;
+  height: 40px;
+  line-height: 40px;
+  transition: opacity, transform, 300ms;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+}
+
+.tb-transp-nav-link {
+  opacity: .4;
+}

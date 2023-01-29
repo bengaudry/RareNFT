@@ -1,0 +1,36 @@
+.cta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  background-color: rgb(var(--accent-color));
+  width: max-content;
+  padding: 12px 24px;
+  font-weight: 600;
+  color: rgb(var(--body-bg-color));
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(var(--accent-color));
+  border-radius: 7px;
+  transition: background-color, color, border-color, 300ms;
+
+  &:hover {
+    background: rgba(var(--accent-color), .8);
+    border-color: rgba(var(--accent-color), .8);
+  }
+}
+
+.cta-secondary {
+  background: transparent;
+  color: rgb(var(--primary-text-color));
+  border-color: rgba(var(--accent-color), .3);
+
+  &:hover {
+    border-color: rgba(var(--accent-color), .8);
+    background-color: transparent;
+  }
+}
+
+.discreet-link {
+  text-decoration: underline;
+}

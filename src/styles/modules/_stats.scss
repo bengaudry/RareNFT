@@ -1,0 +1,60 @@
+.stats {
+  padding-bottom: 75px;
+  .responsive {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: fit-content;
+  }
+}
+
+.stats-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 60px;
+}
+
+.stats-numbers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 60px;
+}
+
+.stats-nb-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.stats-nb-title {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.stats-nb-desc {
+  font-size: 1.2rem;
+  opacity: .5;
+}
+
+.neon-statue-img {
+  height: 400px;
+}
+
+.explore-artworks-img {
+  width: 150px;
+  height: 150px;
+  animation: rotating-img 30s linear forwards infinite;
+}
+
+@keyframes rotating-img {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
