@@ -53,3 +53,16 @@
 .tb-transp-nav-link {
   opacity: .4;
 }
+
+@media screen and (max-width: 768px) {
+  .top-bar {
+    .responsive {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .tb-cta {
+    font-size: .9rem;
+  }
+}

@@ -78,3 +78,45 @@
 .statue-img {
   width: 450px;
 }
+
+@media screen and (max-width: 768px) {
+  .hero {
+    padding-top: 190px;
+    width: 100%;
+    .responsive {
+      text-align: center;
+      justify-content: center;
+      width: 100%;
+      flex-direction: column-reverse;
+      gap: 70px;
+    }
+  }
+
+  .hero-title {
+    font-size: 2.25rem;
+    margin-bottom: 15px;
+  }
+
+  .hero-description {
+    font-size: 1.1rem;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  .hero-cta {
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+
+  .statue-img {
+    width: 90%;
+  }
+
+  .feature {
+    right: 50%;
+    bottom: -25%;
+    transform: translateX(50%);
+    background-color: rgba(var(--body-bg-color), .9);
+  }
+}

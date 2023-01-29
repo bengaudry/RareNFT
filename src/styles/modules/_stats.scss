@@ -58,3 +58,43 @@
     transform: rotate(360deg);
   }
 }
+
+@media screen and (max-width: 768px) {
+  .stats {
+    padding-top: 125px;
+    padding-bottom: 50px;
+    .responsive {
+      flex-direction: column;
+    }
+  }
+
+  .stats-left {
+    flex-direction: row;
+  }
+
+  .stats-numbers {
+    flex-direction: column;
+  }
+
+  .stats-nb-title {
+    text-align: center;
+    font-size: 1.25rem;
+  }
+
+  .stats-nb-desc {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .stats-right {
+    width: 100%;
+    padding-top: 80px;
+  }
+
+  .neon-statue-img {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    height: 100%;
+  }
+}
