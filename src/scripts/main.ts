@@ -38,3 +38,8 @@ function setBackgroundOnMenu() {
 }
 
 window.addEventListener("scroll", setBackgroundOnMenu, { passive: true });
+
+const menuToggler = document.getElementById('menu-toggler');
+menuToggler?.addEventListener("click", () => {
+  document.querySelector(".tb-actions")?.classList.toggle("tb-actions-closed")
+})
